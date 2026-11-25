@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #F5EFE6;
+    --bg-secondary: #FAF8F4;
+    --bg-card: #FFFFFF;
+    --bg-light-blue: #DCEEF8;
+    --accent-primary: #83BFD9;
+    --accent-primary-dark: #2C6E8A;
+    --soft-green: #B5D8C5;
+    --muted-gold: #D8B98C;
+    --text-main: #353B40;
+    --text-secondary: #686E74;
+    --warning: #EBCB91;
+    --error: #DC8983;
+  }
+
+  html {
+    font-family: "Tajawal", "Alexandria", system-ui, -apple-system, sans-serif;
+    background-color: #F5EFE6;
+    color: #353B40;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: "Alexandria", "Tajawal", system-ui, sans-serif;
+    text-wrap: balance;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .font-mono-num {
+    font-family: "IBM Plex Mono", "Alexandria", monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom warm scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF8F4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D8B98C;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #83BFD9;
+}
+
+/* Range slider refined styling */
+input[type="range"].mihak-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  background: #DCEEF8;
+  border-radius: 9999px;
+  outline: none;
+}
+
+input[type="range"].mihak-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 9999px;
+  background: #2C6E8A;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 1px 4px rgba(53, 59, 64, 0.25);
+  cursor: pointer;
+  transition: transform 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+input[type="range"].mihak-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.12);
+}
+
+@media print {
+  body {
+    background: #FFFFFF !important;
+    color: #353B40 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .print-break-avoid {
+    break-inside: avoid;
+  }
+}

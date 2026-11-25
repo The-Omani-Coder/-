@@ -1,0 +1,6 @@
+{
+  "name": "مِحَكّ | MIHAK — مختبر القرارات التجارية الذكي",
+  "description": "اختبر قرارك قبل أن تستثمر. منصة ذكاء القرارات التجارية للمشاريع الصغيرة والمنزلية والناشئة في عُمان.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
